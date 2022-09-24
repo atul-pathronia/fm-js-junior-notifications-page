@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+html {
+  font-size: 62.5%;
+  overflow-y: visible; }
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #f7fafd; }
+
+.container {
+  max-width: 90%;
+  background-color: white;
+  padding: 0 1rem;
+  margin: 2rem 0; }
+
+.container-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 1rem 0; }
+  .container-heading .notification-heading {
+    font-weight: 800;
+    color: #1c202b;
+    font-size: 1.6rem; }
+    .container-heading .notification-heading strong {
+      background-color: #0a317b;
+      color: white;
+      padding: 0.1rem 1rem;
+      border-radius: 0.5rem; }
+      .container-heading .notification-heading strong:hover {
+        cursor: pointer;
+        color: #0a317b; }
+  .container-heading .read-all {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #939dae; }
+
+.notification-box {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column; }
+  .notification-box .notification-box-1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem; }
+    .notification-box .notification-box-1 img {
+      max-width: 15%; }
+    .notification-box .notification-box-1 .notification-text {
+      color: #939dae;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      font-weight: 500; }
+      .notification-box .notification-box-1 .notification-text .avatar-name {
+        color: #1c202b;
+        font-weight: 800;
+        cursor: pointer; }
+        .notification-box .notification-box-1 .notification-text .avatar-name:hover {
+          color: #0a317b; }
+  .notification-box .private-message {
+    padding: 1rem;
+    border: 1px solid #dde7ee;
+    color: #939dae;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-left: 5rem; }
+    .notification-box .private-message:hover {
+      cursor: pointer;
+      background-color: #e5effa; }
+
+.notification-box.unread {
+  background-color: #f7fafd; }
+
+@media (min-width: 476px) {
+  html {
+    font-size: 68.75%; }
+  .container {
+    max-width: 70%; }
+  .notification-box .notification-box-1 img {
+    width: 5%; } }
+
+@media (min-width: 769px) {
+  html {
+    font-size: 75%; }
+  .container {
+    max-width: 60%; }
+  .notification-box .notification-box-1 img {
+    width: 10%; } }
+
+@media (min-width: 1025px) {
+  html {
+    font-size: 81.25%; }
+  .container {
+    max-width: 50%; }
+  .notification-box .private-message {
+    margin-left: 3rem; } }
