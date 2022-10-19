@@ -14,7 +14,7 @@ readBtn.addEventListener("click", function (e) {
   });
   unreadMsgs.forEach((unread) => {
     if (unread.classList.contains("unread")) {
-      newUread.push(unread);
+      newUreadMsgs.push(unread);
     }
   });
   numberOfNotification.textContent = `${newUreadMsgs.length}`;
